@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Index Page</title>
+    <link rel="stylesheet" href="css/stylesheet.css">
+    <style> 
+        .txtbox {
+            font-size: 150%;
+            padding: 6px; 
+            font-family: Arial;
+            color: rgb(19, 161, 0);
+        }
+        .txtgen{
+            font-size: 150%;
+        }
+    </style>
+
+
+
+</head>
+<body>
+    <h1>Mutatus Castle</h1>
+
+    <p class="txtgen" style="color:#2196F3;"> Before starting the game, please tell us your name and age. </p>
+    
+    <form onsubmit="changePage(event)">
+        <label for="fname" class="txtgen" style="color:#2196F3;">name:</label>
+        <input type="text" class="txtbox" id="fname" name="fname"><br><br>
+        <label for="lname" class="txtgen" style="color:#2196F3;">age:</label>
+        <input type="text" class="txtbox" id="lname" name="lname"><br><br>
+        <input type="submit" class="label green" value="Submit">
+    </form>
+</script>
+         
+    
+</body>
+</html>
