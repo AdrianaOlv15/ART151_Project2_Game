@@ -6,35 +6,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Index Page</title>
     <link rel="stylesheet" href="css/stylesheet.css">
-    <style> 
-        .txtbox {
-            font-size: 150%;
-            padding: 6px; 
-            font-family: Arial;
-            color: rgb(19, 161, 0);
-        }
-        .txtgen{
-            font-size: 150%;
-        }
-    </style>
+    <style> </style>
 
 
 
 </head>
 <body>
-    <h1>Mutatus Castle</h1>
+    <script src="js/roomCodes.js"></script>
 
-    <p class="txtgen" style="color:#2196F3;"> Before starting the game, please tell us your name and age. </p>
-    
-    <form onsubmit="changePage(event)">
-        <label for="fname" class="txtgen" style="color:#2196F3;">name:</label>
-        <input type="text" class="txtbox" id="fname" name="fname"><br><br>
-        <label for="lname" class="txtgen" style="color:#2196F3;">age:</label>
-        <input type="text" class="txtbox" id="lname" name="lname"><br><br>
-        <input type="submit" class="label green" value="Submit">
-    </form>
-</script>
-         
+    <p class="roomHead"> Puzzle Castle </p>
+
+    <p class="txt1" > You have been trapped in a castle! </p>
+    <p class="txt1" > In order to get out you need to find a key to the exit door. </p>
+    <p class="txt1" > You will need to travel from room to room until you find the</p>
+    <p class="txt1" > key to unlock the exit. </p>
+
+
+    <p class="txt1" > However! it's not so easy. Most of the doors that connect the</p>
+    <p class="txt1" > rooms are blocked by someone or something that will ask you to </p>
+    <p class="txt1" > use items in your inventory to let you to pass. You will find </p>
+    <p class="txt1" > these items in some of the rooms as you keep wondering across </p>
+    <p class="txt1" > the castle. </p>
+
+
+    <p class="txt1" > Best of luck! </p>
+
+    <button class="label green" onclick="StartSetDoorsAndItems()">START</button>
     
 </body>
 </html>

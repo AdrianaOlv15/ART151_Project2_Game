@@ -4,34 +4,34 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Room 4</title>
+    <title>Room 1</title>
     <link rel="stylesheet" href="../css/stylesheet.css">
 
 </head>
-<body onload="updateScreenBasedOnMemory(4)">
-    <script src="../js/roomCodes.js"></script>
+<body onload="updateScreenBasedOnMemory(1)">
+    <script src="../js/roomCodes.js" ></script>
 
 
-    <p class="roomHead"> Room 4 </p>
-    <p class="floor">MAP<br> ___ ___ ___ ___ ___ <br>|___|___|___|___|___|<br>|___|_X_|___|___|___|<br>|___|<br>exit<br></p>
+    <p class="roomHead"> Room 1 </p>
+    <p class="floor">MAP<br> ___ ___ ___ ___ ___ <br>|___|___|___|___|___|<br>|___|___|___|___|___|<br>|_X_|<br>exit<br></p>
     
 
-    <p class="door_text">- DOORS - <br> green = unlocked | gray = locked</p>
-    <button id ="door8_ID" class="label purple" onclick="move_room('4', '6')">⇧</button> <br>
-    <button id ="door9_ID" class="label purple" onclick="move_room('4', '5')">⇦</button> <button class="label black">__</button>
-    <button id ="door7_ID" class="label green" onclick="move_room('4', '2')">⇨</button>
+    <p class="door_text">- DOORS - <br> green = unlocked | purple = locked</p>
+    <button id ="door1_ID" class="label green" value="1" onclick="move_room('1', '2')"> ⇧ </button> <p>
+    <button id ="doorExit_ID" class="label purple" value="0" onclick="move_room('1', 'exit')">⇩ EXIT ⇩</button>
 
 
     <p class="other_text">- CONSOLE -</p>
     <tag id="doorText" class="txt1"></tag><br><br>
     <tag id="consoleText" class="txt1"></tag>
+    
+    
+    <p class="items_text" onclick="printGameStatus(), updateScreenBasedOnMemory(1)">- ITEMS IN THIS ROOM -</p>
+    <button id ="item1_bt" class="label blue" onclick="item_to_inventory(1)">Dragon Ball (★★★★)</button>
+    <button id ="item2_bt" class="label blue" onclick="item_to_inventory(2)">Tin Foil</button>
 
 
-    <p class="items_text" onclick="printGameStatus(), updateScreenBasedOnMemory(4)">- ITEMS IN THIS ROOM -</p>
-    <p class="txt1" >no items in this room, sorry.</p>
-
-
-    <p class="inv_text">- YOUR INVENTORY - <br> green = available | blue = selected | black = unavailable</p>
+    <p class="inv_text">- YOUR INVENTORY - <br> white = available | black = unavailable | blue = selected </p>
     <button id="1.1" class="label white" value="0" onclick="select_unselect_item_in_inventory(1)">item 1</button>
     <button id="1.2" class="label white" value="0" onclick="select_unselect_item_in_inventory(2)">item 2</button>
     <button id="1.3" class="label white" value="0" onclick="select_unselect_item_in_inventory(3)">item 3</button>
@@ -46,7 +46,7 @@
     <button id="1.12" class="label white" value="0" onclick="select_unselect_item_in_inventory(12)">item 12</button>
     <button id="1.13" class="label white" value="0" onclick="select_unselect_item_in_inventory(13)">item 13</button>
     <button id="1.14" class="label white" value="0" onclick="select_unselect_item_in_inventory(14)">item 14</button> <h1></h1>
-    <button id="1.15" class="label purple" value="0" onclick="select_unselect_item_in_inventory(15)">key</button>
+    <button id="1.15" class="label white" value="0" onclick="select_unselect_item_in_inventory(15)">key</button>
     <button id="1.16" class="label white" value="0" onclick="select_unselect_item_in_inventory(16)">???</button>
          
 </body>

@@ -7,32 +7,90 @@ body{
 }
 
 
-.label { color: white; font-size:150%; padding: 6px; font-family: Arial; width: 100px;}
-.green {background-color: #04AA6D;} /* Green */
-.blue {background-color: #2196F3;} /* Blue */
-.orange {background-color: #ff9800;} /* Orange */
-.red {background-color: #f44336;} /* Red */ 
-.gray {background-color: #e7e7e7; color: black;} /* Gray */ 
+.label {font-size:100%; border-style: solid; border-color:rgb(0, 0, 0); padding: 6px; font-family: 'Anonymous Pro'; text-align: center;}
+.green {color: white; background-color: #008c02; width: 300;} /* Green */
+.blue {color: white;  background-color: #2196F3;} /* Blue */
+.purple {color: white; background-color: #696969;} /* Orange */
+.yellow {color: rgb(0, 0, 0); background-color: #ffea00;} /* Red */ 
+.ppl {color: rgb(0, 0, 0); background-color: #00fbff; color: black;} /* Gray */ 
+.white {color: white; border-style: dashed; background-color: black; border-color:white; }
+.black {color: rgb(0, 0, 0); border-style: solid; background-color: black; border-color:rgb(0, 0, 0);}
+
 
 .roomHead{
     color: rgb(255, 230, 0);
-    font-size:150%;
+    font-size:100%;
     font-family: 'Anonymous Pro';
     padding: 6px;
-    border-style: dashed;
+    border-style: solid;
     border-width: 2px;
     border-left-width: 2px;
     border-right-width: 2px;
     border-color: rgb(255, 230, 0);
 }
+
+.door_text{
+    color: rgb(85, 255, 0);
+    height:50%;
+    font-size:100%;
+    font-family: 'Anonymous Pro';
+    padding: 6px;
+    border-style: solid;
+    border-width: 2px;
+    border-left-width: 2px;
+    border-right-width: 2px;
+    border-color: rgb(85, 255, 0);
+}
+
+.items_text{
+    color: #2196F3;
+    height:50%;
+    font-size:100%;
+    font-family: 'Anonymous Pro';
+    padding: 6px;
+    border-style: solid;
+    border-width: 2px;
+    border-left-width: 2px;
+    border-right-width: 2px;
+    border-color: #2196F3;
+}
+
+
+.other_text{
+    color: rgb(255, 255, 255);
+    font-size:100%;
+    font-family: 'Anonymous Pro';
+    padding: 6px;
+    border-style: solid;
+    border-width: 2px;
+    border-left-width: 2px;
+    border-right-width: 2px;
+    border-color: rgb(255, 255, 255);
+}
+
+.inv_text{
+    color: rgb(255, 255, 255);
+    font-size:100%;
+    font-family: 'Anonymous Pro';
+    padding: 6px;
+    border-style: solid;
+    border-width: 2px;
+    border-left-width: 2px;
+    border-right-width: 2px;
+    border-color: #2196F3;
+}
+
+
+
 .txt1{
     color: rgb(255, 255, 255);
-    font-size:150%;
+    font-size:100%;
     font-family: 'Anonymous Pro'
 }
 .floor{
     color: rgb(255, 230, 0);
-    font-size:150%;
+    font-size:100%;
+    font-family: 'Anonymous Pro'
 }
 
 

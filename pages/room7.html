@@ -4,17 +4,52 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Level 2 - Room 3</title>
-    <link rel="stylesheet" href="css/stylesheet.css">
-
+    <title>Room 7</title>
+    <link rel="stylesheet" href="../css/stylesheet.css">
 
 </head>
-<body>
-    <h1>Level 2 - Room 3</h1>
-    <button onclick="changePage()">Click me!</button>
+<body onload="updateScreenBasedOnMemory(7)">
+    <script src="../js/roomCodes.js"></script>
 
-    <script src="js/testing.js"> </script>
-         
+
+    <p class="roomHead"> Room 7 </p>
+    <p class="floor">MAP<br> ___ ___ ___ ___ ___ <br>|_X_|___|___|___|___|<br>|___|___|___|___|___|<br>|___|<br>exit<br></p>
     
+
+    <p class="door_text">- DOORS - <br> green = unlocked | gray = locked</p>
+    <button id ="door10_ID" class="label green" onclick="move_room('7', '6')">⇨</button>
+
+
+    <p class="other_text">- CONSOLE -</p>
+    <tag id="doorText" class="txt1"></tag><br><br>
+    <tag id="consoleText" class="txt1"></tag>
+
+
+    <p class="items_text" onclick="printGameStatus(), updateScreenBasedOnMemory(7)">- ITEMS IN THIS ROOM -</p>
+    <button id ="item15_bt" class="label yellow" value="1" onclick="item_to_inventory(15)">Key</button>
+
+
+    <p class="other_text">- PEOPLE IN THIS ROOM -</p>
+    <button id ="item16_bt" class="label ppl" onclick="item_to_inventory(16)">Child</button>
+
+
+    <p class="inv_text">- YOUR INVENTORY - <br> green = available | blue = selected | black = unavailable</p>
+    <button id="1.1" class="label white" value="0" onclick="select_unselect_item_in_inventory(1)">item 1</button>
+    <button id="1.2" class="label white" value="0" onclick="select_unselect_item_in_inventory(2)">item 2</button>
+    <button id="1.3" class="label white" value="0" onclick="select_unselect_item_in_inventory(3)">item 3</button>
+    <button id="1.4" class="label white" value="0" onclick="select_unselect_item_in_inventory(4)">item 4</button>
+    <button id="1.5" class="label white" value="0" onclick="select_unselect_item_in_inventory(5)">item 5</button> <h1></h1>
+    <button id="1.6" class="label white" value="0" onclick="select_unselect_item_in_inventory(6)">item 6</button>
+    <button id="1.7" class="label white" value="0" onclick="select_unselect_item_in_inventory(7)">item 7</button>
+    <button id="1.8" class="label white" value="0" onclick="select_unselect_item_in_inventory(8)">item 8</button>
+    <button id="1.9" class="label white" value="0" onclick="select_unselect_item_in_inventory(9)">item 9</button>
+    <button id="1.10" class="label white" value="0" onclick="select_unselect_item_in_inventory(10)">item 10</button> <h1></h1>
+    <button id="1.11" class="label white" value="0" onclick="select_unselect_item_in_inventory(11)">item 11</button>
+    <button id="1.12" class="label white" value="0" onclick="select_unselect_item_in_inventory(12)">item 12</button>
+    <button id="1.13" class="label white" value="0" onclick="select_unselect_item_in_inventory(13)">item 13</button>
+    <button id="1.14" class="label white" value="0" onclick="select_unselect_item_in_inventory(14)">item 14</button> <h1></h1>
+    <button id="1.15" class="label white" value="0" onclick="select_unselect_item_in_inventory(15)">key</button>
+    <button id="1.16" class="label white" value="0" onclick="select_unselect_item_in_inventory(16)">???</button>
+         
 </body>
 </html>
