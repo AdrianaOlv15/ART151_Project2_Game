@@ -178,9 +178,9 @@ function getItemNameByTag(number){
     if (number == "item7_tag") {name = "Heaven Scroll"}
     if (number == "item8_tag") {name = "Yellow Paint"}
     if (number == "item9_tag") {name = "Earth Scroll"}
-    if (number == "item10_tag") {name = "10"}
+    if (number == "item10_tag") {name = "Right VB Shoe"}
     if (number == "item11_tag") {name = "Blue Paint"}
-    if (number == "item12_tag") {name = "12"}
+    if (number == "item12_tag") {name = "Left VB Shoe"}
     if (number == "item13_tag") {name = "Minerva’s Pen"}
     if (number == "item14_tag") {name = "Invisibility Cloak"}
     if (number == "item15_tag") {name = "KEY"}
@@ -441,7 +441,7 @@ function move_room(from, to){
                 sessionStorage.setItem("item12_tag", "used");
                 sessionStorage.setItem("item10_tag", "used");
             } else {
-                document.getElementById("doorText").innerHTML = "door 5 text"
+                document.getElementById("doorText").innerHTML = "Hinata: Hi! my name is Shoyo Hinata. I can't jump really high when Kageyama tosses me a volleyball. The key to unlock this door is on top of this really tall shelf. If I had my volleyball shoes, I could jump to get it. I think I left them somewhere in these rooms. Could you help me find them?"
             }
 
         } else if (door == "doorExit") {  
